@@ -1,0 +1,2 @@
+yang_project
+-DCATKIN_DEVEL_PREFIX=/home/bonato/Documents/yang_box_position/devel -DCMAKE_INSTALL_PREFIX=/home/bonato/Documents/yang_box_position/install -G Unix Makefiles

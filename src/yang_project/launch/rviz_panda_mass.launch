@@ -1,0 +1,11 @@
+<launch>
+  <arg name="model" />
+  <param name="robot_description"
+    textfile="$(find panda_description)/urdf/panda_mass.urdf" />
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" /> 
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find panda_description)/rviz/config_file_panda_mass.rviz" />
+  <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" /> 
+
+    
+</launch>

@@ -1,0 +1,26 @@
+<launch>
+
+    <!-- vrpn Optitrack -->
+    <arg name="server" default="128.178.145.104"/>
+
+
+
+    <param name="robot_description"
+    textfile="$(find panda_description)/urdf/panda_mass.urdf" />
+    
+    <node pkg="vrpn_client_ros" type="vrpn_client_node" name="vrpn_client_node" >
+        <rosparam subst_value="true">
+        server: $(arg server)
+        port: 3883
+        frame_id: world
+        broadcast_tf: true
+        # Must either specify refresh frequency > 0.0, or a list of trackers to create
+        refresh_tracker_frequency: 1.0
+        #trackers:
+        #- FirstTracker
+        #- SecondTracker
+        </rosparam>
+    </node>
+    <node name="Initialize_pose_franka" pkg="panda_description" type="Initialize_pose_franka" output="screen"/> 
+
+</launch>
