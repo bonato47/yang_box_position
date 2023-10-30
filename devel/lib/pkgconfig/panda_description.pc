@@ -1,8 +1,0 @@
-prefix=/home/bonato/Documents/yang_box_position/devel
-
-Name: panda_description
-Description: Description of panda_description
-Version: 0.0.0
-Cflags: -I/home/bonato/Documents/yang_box_position/src/yang_project/include
-Libs: -L${prefix}/lib -lpanda_description
-Requires: roscpp rospy std_msgs message_runtime sensor_msgs geometry_msgs

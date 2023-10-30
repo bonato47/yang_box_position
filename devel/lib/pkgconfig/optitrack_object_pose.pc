@@ -1,0 +1,8 @@
+prefix=/home/bonato/Documents/yang_box_position/devel
+
+Name: optitrack_object_pose
+Description: Description of optitrack_object_pose
+Version: 0.0.0
+Cflags: -I/home/bonato/Documents/yang_box_position/devel/include -I/home/bonato/Documents/yang_box_position/src/optitrack_object_pose/include
+Libs: -L${prefix}/lib -loptitrack_object_pose
+Requires: roscpp rospy std_msgs message_runtime sensor_msgs geometry_msgs

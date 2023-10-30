@@ -131,7 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/bonato/Documents/yang_box_position/build/gtest/cmake_install.cmake")
-  include("/home/bonato/Documents/yang_box_position/build/yang_project/cmake_install.cmake")
+  include("/home/bonato/Documents/yang_box_position/build/optitrack_object_pose/cmake_install.cmake")
 
 endif()
 

@@ -486,10 +486,10 @@ message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
 
 //Value Computed by CMake
-panda_description_BINARY_DIR:STATIC=/home/bonato/Documents/yang_box_position/build/yang_project
+optitrack_object_pose_BINARY_DIR:STATIC=/home/bonato/Documents/yang_box_position/build/optitrack_object_pose
 
 //Value Computed by CMake
-panda_description_SOURCE_DIR:STATIC=/home/bonato/Documents/yang_box_position/src/yang_project
+optitrack_object_pose_SOURCE_DIR:STATIC=/home/bonato/Documents/yang_box_position/src/optitrack_object_pose
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
