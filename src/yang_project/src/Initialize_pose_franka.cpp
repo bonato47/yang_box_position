@@ -27,11 +27,12 @@ vector<double> posJointActual = {0,0,0,0,0,0,0};
 bool initCheckOpti = false;
 bool initCheck = false;
 
+float x_offset = 0.2;
+
 int step_count = 0;
 
 int main(int argc, char **argv){
     ros::init(argc, argv, "Object_poses");
-
     //choose the tolerance and time for the inverse kinematic
     float err_ik =0.001;
     float t_ik = 0.05;
@@ -39,54 +40,51 @@ int main(int argc, char **argv){
     NextState nextState(err_ik,t_ik);
 
     sensor_msgs::JointState msgP;
-
+    vector<double> jointToTarget(7);
     //Initialisation of the Ros Node (Service, Subscrber and Publisher)
     ros::NodeHandle Nh;
     ros::Subscriber sub = Nh.subscribe("robot/joint_state", 1000, CounterCallback);
-    ros::Publisher chatter_pub = Nh.advertise<sensor_msgs::JointState>("robot/joint_commands", 1000);
+    //ros::Publisher chatter_pub = Nh.advertise<sensor_msgs::JointState>("robot/joint_commands", 1000);
     ros::Subscriber sub_opt = Nh.subscribe("vrpn_client_node/box_multiple/pose", 1000, optitrackCallback);
 
     //Frequency of the Ros loop
     ros::Rate loop_rate(10);
-    cout<< "setup .. " << endl;
-
+    Nh.setParam("jointToTarget", jointToTarget);
+    cout << "Connection to Optitrack connection and Franka actual joint ..."<< endl;
+    
     //waiting for the first joint position
+    int countInit = 0;
     while(!(initCheck && initCheckOpti) ){
+        countInit++;
         ros::spinOnce();
+        loop_rate.sleep();  
+
+        if (countInit ==50){
+            cout <<"Connection is not doing ok. stopping code..."<< endl;
+            ros::shutdown();
+            exit(0);
+        }
     } 
 
-    cout<< "setupready" << endl;
-
+    cout <<"Connection is well done"<< endl;
 
     while (ros::ok())
     {
+        // doing Inverse kineamtic
+        int rc = nextState.getIK(posJointActual,mean);
 
-        vector<double> traj_cart  = mean;
+        // give posisiont of the object to grasp and the joint of the frank berfore going to grasp into parameters
+        vector<double> PosObjectGrasp = {mean[4] + x_offset, mean[5],mean[6]+0.07};
+        Nh.setParam("jointToTarget", nextState.posJointNext);
+        Nh.setParam("PosObjectGrasp", PosObjectGrasp);
 
-        int rc = nextState.getIK(posJointActual,traj_cart);
-        cout <<"start"<< endl;
-
-        for(int i =0; i<7 ; i++){
-            cout << posJointActual[i] << endl;
-
-        }
-        // while (!mseValue_cart(posJointActual,nextState.posJointNext,0.01) ){
-        //     chatter_pub.publish(nextState.msgP);
-        //     ros::spinOnce();        
-        //     loop_rate.sleep();  
-        // }
-
-        msgP.position= posJointActual;
-        chatter_pub.publish(msgP);
-
-        //-----------------
-        //send the  new joint to param
+        // msgP.position= nextState.posJointNext;
+        // chatter_pub.publish(msgP);
 
         //-----------------------------------------
-        // needto find a conditionif noik
-        // if(rc < 0){
-        //     ROS_INFO("this point is not achivable, please give another");
-        // }
+        if(rc < 0){
+             ROS_INFO("Inverse kinematic nof found, please move the objects");
+         }
 
         ros::spinOnce();
         loop_rate.sleep();  
@@ -134,9 +132,9 @@ void optitrackCallback(const geometry_msgs::PoseStamped::ConstPtr& msg)
         mean.push_back(sum[5]/100);
         mean.push_back(sum[6]/100);
         //meanpose xyz
-        mean.push_back(sum[0]/100);
+        mean.push_back(sum[0]/100 + x_offset);
         mean.push_back(sum[1]/100);
-        mean.push_back(sum[2]/100 +0.5);
+        mean.push_back(sum[2]/100 +0.3);
         // Reset counters and sums for the next 100 steps.
         step_count = 0;
         sum.clear();
