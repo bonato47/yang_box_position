@@ -1,4 +1,4 @@
-prefix=/home/alberic/Documents/LASA/yang_box_position/install
+prefix=/home/bonato/Documents/yang_box_position/install
 
 Name: optitrack_object_pose
 Description: Description of optitrack_object_pose

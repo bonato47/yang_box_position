@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/alberic/Documents/LASA/yang_box_position/install")
+  set(CMAKE_INSTALL_PREFIX "/home/bonato/Documents/yang_box_position/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/alberic/Documents/LASA/yang_box_position/build/gtest/googletest/cmake_install.cmake")
+  include("/home/bonato/Documents/yang_box_position/build/gtest/googletest/cmake_install.cmake")
 
 endif()
 

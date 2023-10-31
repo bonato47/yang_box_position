@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py"
-  "/home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/__init__.py"
+  "/home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py"
+  "/home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/__init__.py"
   "CMakeFiles/optitrack_object_pose_generate_messages_py"
 )
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alberic/Documents/LASA/yang_box_position/src
+CMAKE_SOURCE_DIR = /home/bonato/Documents/yang_box_position/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alberic/Documents/LASA/yang_box_position/build
+CMAKE_BINARY_DIR = /home/bonato/Documents/yang_box_position/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ optitrack_object_pose/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build: r
 .PHONY : optitrack_object_pose/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 
 optitrack_object_pose/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	cd /home/alberic/Documents/LASA/yang_box_position/build/optitrack_object_pose && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/bonato/Documents/yang_box_position/build/optitrack_object_pose && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : optitrack_object_pose/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 optitrack_object_pose/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend:
-	cd /home/alberic/Documents/LASA/yang_box_position/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alberic/Documents/LASA/yang_box_position/src /home/alberic/Documents/LASA/yang_box_position/src/optitrack_object_pose /home/alberic/Documents/LASA/yang_box_position/build /home/alberic/Documents/LASA/yang_box_position/build/optitrack_object_pose /home/alberic/Documents/LASA/yang_box_position/build/optitrack_object_pose/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bonato/Documents/yang_box_position/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bonato/Documents/yang_box_position/src /home/bonato/Documents/yang_box_position/src/optitrack_object_pose /home/bonato/Documents/yang_box_position/build /home/bonato/Documents/yang_box_position/build/optitrack_object_pose /home/bonato/Documents/yang_box_position/build/optitrack_object_pose/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : optitrack_object_pose/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 

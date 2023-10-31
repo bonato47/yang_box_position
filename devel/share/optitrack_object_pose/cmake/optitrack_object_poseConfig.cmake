@@ -67,14 +67,14 @@ set(optitrack_object_pose_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(optitrack_object_pose_SOURCE_PREFIX /home/alberic/Documents/LASA/yang_box_position/src/optitrack_object_pose)
-  set(optitrack_object_pose_DEVEL_PREFIX /home/alberic/Documents/LASA/yang_box_position/devel)
+  set(optitrack_object_pose_SOURCE_PREFIX /home/bonato/Documents/yang_box_position/src/optitrack_object_pose)
+  set(optitrack_object_pose_DEVEL_PREFIX /home/bonato/Documents/yang_box_position/devel)
   set(optitrack_object_pose_INSTALL_PREFIX "")
   set(optitrack_object_pose_PREFIX ${optitrack_object_pose_DEVEL_PREFIX})
 else()
   set(optitrack_object_pose_SOURCE_PREFIX "")
   set(optitrack_object_pose_DEVEL_PREFIX "")
-  set(optitrack_object_pose_INSTALL_PREFIX /home/alberic/Documents/LASA/yang_box_position/install)
+  set(optitrack_object_pose_INSTALL_PREFIX /home/bonato/Documents/yang_box_position/install)
   set(optitrack_object_pose_PREFIX ${optitrack_object_pose_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(optitrack_object_pose_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/alberic/Documents/LASA/yang_box_position/devel/include;/home/alberic/Documents/LASA/yang_box_position/src/optitrack_object_pose/include " STREQUAL " ")
+if(NOT "/home/bonato/Documents/yang_box_position/devel/include;/home/bonato/Documents/yang_box_position/src/optitrack_object_pose/include " STREQUAL " ")
   set(optitrack_object_pose_INCLUDE_DIRS "")
-  set(_include_dirs "/home/alberic/Documents/LASA/yang_box_position/devel/include;/home/alberic/Documents/LASA/yang_box_position/src/optitrack_object_pose/include")
+  set(_include_dirs "/home/bonato/Documents/yang_box_position/devel/include;/home/bonato/Documents/yang_box_position/src/optitrack_object_pose/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/alberic/Documents/LASA/yang_box_position/devel/include;/home/alber
         message(FATAL_ERROR "Project 'optitrack_object_pose' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'optitrack_object_pose' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/alberic/Documents/LASA/yang_box_position/src/optitrack_object_pose/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'optitrack_object_pose' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/bonato/Documents/yang_box_position/src/optitrack_object_pose/${idir}'.  ${_report}")
     endif()
     _list_append_unique(optitrack_object_pose_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/alberic/Documents/LASA/yang_box_position/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/bonato/Documents/yang_box_position/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -43,35 +43,35 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alberic/Documents/LASA/yang_box_position/src
+CMAKE_SOURCE_DIR = /home/bonato/Documents/yang_box_position/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alberic/Documents/LASA/yang_box_position/build
+CMAKE_BINARY_DIR = /home/bonato/Documents/yang_box_position/build
 
 # Utility rule file for optitrack_object_pose_generate_messages_py.
 
 # Include the progress variables for this target.
 include optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py.dir/progress.make
 
-optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py: /home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py
-optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py: /home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/__init__.py
+optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py: /home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py
+optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py: /home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/__init__.py
 
 
-/home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py: /home/alberic/Documents/LASA/yang_box_position/src/optitrack_object_pose/msg/StampedJointState.msg
-/home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py: /opt/ros/noetic/share/sensor_msgs/msg/JointState.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alberic/Documents/LASA/yang_box_position/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG optitrack_object_pose/StampedJointState"
-	cd /home/alberic/Documents/LASA/yang_box_position/build/optitrack_object_pose && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/alberic/Documents/LASA/yang_box_position/src/optitrack_object_pose/msg/StampedJointState.msg -Ioptitrack_object_pose:/home/alberic/Documents/LASA/yang_box_position/src/optitrack_object_pose/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p optitrack_object_pose -o /home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg
+/home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py: /home/bonato/Documents/yang_box_position/src/optitrack_object_pose/msg/StampedJointState.msg
+/home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py: /opt/ros/noetic/share/sensor_msgs/msg/JointState.msg
+/home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bonato/Documents/yang_box_position/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG optitrack_object_pose/StampedJointState"
+	cd /home/bonato/Documents/yang_box_position/build/optitrack_object_pose && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/bonato/Documents/yang_box_position/src/optitrack_object_pose/msg/StampedJointState.msg -Ioptitrack_object_pose:/home/bonato/Documents/yang_box_position/src/optitrack_object_pose/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p optitrack_object_pose -o /home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg
 
-/home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/__init__.py: /home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alberic/Documents/LASA/yang_box_position/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for optitrack_object_pose"
-	cd /home/alberic/Documents/LASA/yang_box_position/build/optitrack_object_pose && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg --initpy
+/home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/__init__.py: /home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bonato/Documents/yang_box_position/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for optitrack_object_pose"
+	cd /home/bonato/Documents/yang_box_position/build/optitrack_object_pose && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg --initpy
 
 optitrack_object_pose_generate_messages_py: optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py
-optitrack_object_pose_generate_messages_py: /home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py
-optitrack_object_pose_generate_messages_py: /home/alberic/Documents/LASA/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/__init__.py
+optitrack_object_pose_generate_messages_py: /home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/_StampedJointState.py
+optitrack_object_pose_generate_messages_py: /home/bonato/Documents/yang_box_position/devel/lib/python3/dist-packages/optitrack_object_pose/msg/__init__.py
 optitrack_object_pose_generate_messages_py: optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py.dir/build.make
 
 .PHONY : optitrack_object_pose_generate_messages_py
@@ -82,10 +82,10 @@ optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py.dir/
 .PHONY : optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py.dir/build
 
 optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py.dir/clean:
-	cd /home/alberic/Documents/LASA/yang_box_position/build/optitrack_object_pose && $(CMAKE_COMMAND) -P CMakeFiles/optitrack_object_pose_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/bonato/Documents/yang_box_position/build/optitrack_object_pose && $(CMAKE_COMMAND) -P CMakeFiles/optitrack_object_pose_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py.dir/clean
 
 optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py.dir/depend:
-	cd /home/alberic/Documents/LASA/yang_box_position/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alberic/Documents/LASA/yang_box_position/src /home/alberic/Documents/LASA/yang_box_position/src/optitrack_object_pose /home/alberic/Documents/LASA/yang_box_position/build /home/alberic/Documents/LASA/yang_box_position/build/optitrack_object_pose /home/alberic/Documents/LASA/yang_box_position/build/optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bonato/Documents/yang_box_position/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bonato/Documents/yang_box_position/src /home/bonato/Documents/yang_box_position/src/optitrack_object_pose /home/bonato/Documents/yang_box_position/build /home/bonato/Documents/yang_box_position/build/optitrack_object_pose /home/bonato/Documents/yang_box_position/build/optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : optitrack_object_pose/CMakeFiles/optitrack_object_pose_generate_messages_py.dir/depend
 

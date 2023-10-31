@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/alberic/Documents/LASA/yang_box_position/build/CMakeFiles/CMakeTmp
+Change Dir: /home/bonato/Documents/yang_box_position/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_cabac/fast && /usr/bin/make -f CMakeFiles/cmTC_cabac.dir/build.make CMakeFiles/cmTC_cabac.dir/build
-make[1]: Entering directory '/home/alberic/Documents/LASA/yang_box_position/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cabac.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_cabac.dir/src.c.o   -c /home/alberic/Documents/LASA/yang_box_position/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_cabac
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cabac.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_cabac.dir/src.c.o  -o cmTC_cabac 
-/usr/bin/ld: CMakeFiles/cmTC_cabac.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/make cmTC_cd38e/fast && /usr/bin/make -f CMakeFiles/cmTC_cd38e.dir/build.make CMakeFiles/cmTC_cd38e.dir/build
+make[1]: Entering directory '/home/bonato/Documents/yang_box_position/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cd38e.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_cd38e.dir/src.c.o   -c /home/bonato/Documents/yang_box_position/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_cd38e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd38e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_cd38e.dir/src.c.o  -o cmTC_cd38e 
+/usr/bin/ld: CMakeFiles/cmTC_cd38e.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_cabac.dir/build.make:87: cmTC_cabac] Error 1
-make[1]: Leaving directory '/home/alberic/Documents/LASA/yang_box_position/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_cabac/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_cd38e.dir/build.make:87: cmTC_cd38e] Error 1
+make[1]: Leaving directory '/home/bonato/Documents/yang_box_position/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_cd38e/fast] Error 2
 
 
 Source file was:
@@ -39,20 +39,20 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/alberic/Documents/LASA/yang_box_position/build/CMakeFiles/CMakeTmp
+Change Dir: /home/bonato/Documents/yang_box_position/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_a8b3d/fast && /usr/bin/make -f CMakeFiles/cmTC_a8b3d.dir/build.make CMakeFiles/cmTC_a8b3d.dir/build
-make[1]: Entering directory '/home/alberic/Documents/LASA/yang_box_position/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a8b3d.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a8b3d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_a8b3d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8b3d.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_a8b3d.dir/CheckFunctionExists.c.o  -o cmTC_a8b3d  -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_b7fb4/fast && /usr/bin/make -f CMakeFiles/cmTC_b7fb4.dir/build.make CMakeFiles/cmTC_b7fb4.dir/build
+make[1]: Entering directory '/home/bonato/Documents/yang_box_position/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7fb4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_b7fb4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b7fb4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7fb4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_b7fb4.dir/CheckFunctionExists.c.o  -o cmTC_b7fb4  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_a8b3d.dir/build.make:87: cmTC_a8b3d] Error 1
-make[1]: Leaving directory '/home/alberic/Documents/LASA/yang_box_position/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_a8b3d/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_b7fb4.dir/build.make:87: cmTC_b7fb4] Error 1
+make[1]: Leaving directory '/home/bonato/Documents/yang_box_position/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_b7fb4/fast] Error 2
 
 
 

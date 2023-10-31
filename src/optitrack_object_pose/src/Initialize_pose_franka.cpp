@@ -17,7 +17,8 @@ using namespace std;
 using namespace Eigen;
 
 void optitrackCallback(const geometry_msgs::PoseStamped::ConstPtr &msg);
-void CounterCallback(const sensor_msgs::JointState::ConstPtr msg);
+//void CounterCallback(const sensor_msgs::JointState::ConstPtr msg);
+void CounterCallback(const optitrack_object_pose::StampedJointState::ConstPtr msg);
 vector<double> next_object_pose(vector<double> object_pos, int step);
 
 vector<double> mean = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
