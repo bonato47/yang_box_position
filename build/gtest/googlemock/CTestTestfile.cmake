@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
 # Source directory: /usr/src/googletest/googlemock
-# Build directory: /home/bonato/Documents/yang_box_position/build/gtest/googlemock
+# Build directory: /home/alberic/Documents/LASA/yang_box_position/build/gtest/googlemock
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

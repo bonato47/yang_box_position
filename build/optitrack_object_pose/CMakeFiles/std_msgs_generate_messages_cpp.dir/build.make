@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bonato/Documents/yang_box_position/src
+CMAKE_SOURCE_DIR = /home/alberic/Documents/LASA/yang_box_position/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bonato/Documents/yang_box_position/build
+CMAKE_BINARY_DIR = /home/alberic/Documents/LASA/yang_box_position/build
 
 # Utility rule file for std_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ optitrack_object_pose/CMakeFiles/std_msgs_generate_messages_cpp.dir/build: std_m
 .PHONY : optitrack_object_pose/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 
 optitrack_object_pose/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	cd /home/bonato/Documents/yang_box_position/build/optitrack_object_pose && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/alberic/Documents/LASA/yang_box_position/build/optitrack_object_pose && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : optitrack_object_pose/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 optitrack_object_pose/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend:
-	cd /home/bonato/Documents/yang_box_position/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bonato/Documents/yang_box_position/src /home/bonato/Documents/yang_box_position/src/optitrack_object_pose /home/bonato/Documents/yang_box_position/build /home/bonato/Documents/yang_box_position/build/optitrack_object_pose /home/bonato/Documents/yang_box_position/build/optitrack_object_pose/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alberic/Documents/LASA/yang_box_position/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alberic/Documents/LASA/yang_box_position/src /home/alberic/Documents/LASA/yang_box_position/src/optitrack_object_pose /home/alberic/Documents/LASA/yang_box_position/build /home/alberic/Documents/LASA/yang_box_position/build/optitrack_object_pose /home/alberic/Documents/LASA/yang_box_position/build/optitrack_object_pose/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : optitrack_object_pose/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 

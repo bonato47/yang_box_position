@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/usr/src/googletest")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/bonato/Documents/yang_box_position/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/alberic/Documents/LASA/yang_box_position/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

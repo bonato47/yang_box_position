@@ -6,5 +6,5 @@ CXX_FLAGS = -O3 -DNDEBUG   -std=gnu++14
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"optitrack_object_pose\"
 
-CXX_INCLUDES = -I/home/bonato/Documents/yang_box_position/devel/include -I/home/bonato/Documents/yang_box_position/src/optitrack_object_pose/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 
+CXX_INCLUDES = -I/home/alberic/Documents/LASA/yang_box_position/devel/include -I/home/alberic/Documents/LASA/yang_box_position/src/optitrack_object_pose/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 
 
